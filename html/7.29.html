@@ -6,44 +6,37 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
     <style>
+        div,ul,li{
+            text-align: center;
+            margin: auto;
+        }
         img{
-            width: 1000px;
-        }
-        a,a:hover{
-            text-decoration: none;
-        }
-        ul{
-            margin-left: 700px;
-        }
-        ul li{
-            margin: 10px;
-        }
-        .container{
-            margin-left: 350px;
+            width: 1500px;
+            height: 843px;
         }
     </style>
 </head>
 <body>
-    <h1 class="btn btn-success  btn-block btn-lg"><i class="icon-user icon-white"></i>hello world</h1>
-    <ul class="nav nav-tabs">
-        <li class="active"><a href="#tab1" data-toggle="tab" class="btn btn-success">Tab1</a></li>
-        <li><a href="#tab2" data-toggle="tab" class="btn btn-success">Tab2</a></li>
-        <li><a href="#tab3" data-toggle="tab" class="btn btn-success">Tab3</a></li>
-        <li><a href="#tab4" data-toggle="tab" class="btn btn-success">Tab4</a></li>
-    </ul>
-    <div class="tab-content container">
-        <div class="tab-pane active" id="tab1"><img src="../../4K/天气之子夏美8k壁纸_彼岸图网.jpg" alt=""></div>
-        <div class="tab-pane" id="tab2"><img src="../../4K/天空%20云%20阳光%20黑暗%204K风景壁纸_彼岸图网.jpg" alt=""></div>
-        <div class="tab-pane" id="tab3"><img src="../../4K/王昭君-偶像歌手%20王者荣耀壁纸_彼岸图网.jpg" alt=""></div>
-        <div class="tab-pane" id="tab4"><img src="../../4K/深圳夜景4k壁纸_彼岸图网.jpg" alt=""></div>
-    </div>
-    <a href="#" class="btn btn-success">hello</a>
-    <script src="../../jquery.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script>
-        $(function () {
-            $('.tab a:last').tab('show')
-        })
-    </script>
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#tab1" data-toggle="tab">奥迪-S1</a></li>
+    <li><a href="#tab2" data-toggle="tab">日产-GTR</a></li>
+    <li><a href="#tab3" data-toggle="tab">道奇-挑战者地狱猫</a></li>
+    <li><a href="#tab4" data-toggle="tab">丰田-丰田86</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="tab1"><img src=" ../muscle/wallhaven-95je8d_1920x1080.png"></div>
+    <div class="tab-pane" id="tab2"><img src=" ../muscle/wallhaven-0159xv_1920x1080.png"></div>
+    <div class="tab-pane" id="tab3"><img src=" ../muscle/wallhaven-xl1wpl_1920x1080.png"></div>
+    <div class="tab-pane" id="tab4"><img src=" ../muscle/wallhaven-n63966_1920x1080.png"></div>
+</div>
+
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.tab.js"></script>
+<script src="../jquery.js"></script>
+<script>
+    $(function(){
+        $('.tabs a:last').tab('show');
+    })
+</script>
 </body>
 </html>
